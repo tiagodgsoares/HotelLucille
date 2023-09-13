@@ -1,0 +1,148 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.content-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.description {
+    margin: 5%;
+    padding: 20px;
+    font-family: 'Martel Sans', sans-serif;
+
+    background-color: antiquewhite;
+}
+
+/* When the active class is added, fade in content and reset position */
+.content-container.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.bar-container.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.home-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.bar-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+.drink-snack-title {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    top: 70px;
+    align-items: center;
+}
+
+.concierge-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+.spa-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.drink-snack-container {
+    background-color: antiquewhite;
+    font-family: 'Martel Sans', sans-serif;
+    display: flex;
+    margin: 200px;
+}
+.carousel-wrapper {
+    align-items: center;
+}
+
+.link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-all {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    top: 590px;
+    left: -10px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.centered-word {
+    align-items: center;
+    position: relative;
+    /* left: 40%; */
+}
+
+.link {
+    z-index: 3;
+}
+.dropdown-container {
+    position: relative;
+    align-items: center;
+    z-index: 3;
+    top: 70%;
+    left: 30%;
+}
+.dropdown {
+    /* align-items: center; */
+    z-index: 5;
+    background-color: transparent;
+}
+.dropdown-item {
+    background-color: transparent;
+    /* align-items: center; */
+}
+#high-scores {
+    display: none;
+}
